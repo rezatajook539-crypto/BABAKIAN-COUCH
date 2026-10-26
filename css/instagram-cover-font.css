@@ -1,0 +1,15 @@
+/* Reuse the Persian font already present in this repository. */
+@font-face {
+  font-family: "BYekan";
+  src: url("../font/BYekan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Apply to Persian cover/page text where BYekan is preferred. */
+.persian-cover-text {
+  font-family: "BYekan", Tahoma, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
