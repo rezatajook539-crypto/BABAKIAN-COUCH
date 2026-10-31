@@ -1,0 +1,132 @@
+/* استایل صفحه شاگردان؛ متغیرها و کلاس‌های هدر از index-style.css می‌آیند */
+
+.students-hero {
+  padding: calc(var(--header-h) + 56px) var(--content-pad-x) 32px;
+  background: var(--color-bg);
+}
+
+.students-hero h1 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.students-hero > p:not(.eyebrow) {
+  max-width: 520px;
+  color: var(--color-soft);
+}
+
+.students-hero .goal-menu {
+  margin-top: 28px;
+}
+
+.students {
+  padding: 32px var(--content-pad-x) var(--section-padding-y);
+  background: var(--color-bg);
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.student-card {
+  overflow: hidden;
+  background: var(--color-card);
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-lg);
+}
+
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--color-dark);
+}
+
+.shot {
+  position: relative;
+}
+
+.shot img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: var(--color-dark);
+}
+
+.shot span {
+  position: absolute;
+  inset-inline-end: 8px;
+  bottom: 8px;
+  padding: 0 12px;
+  font-size: 0.75rem;
+  background: rgb(0 0 0 / 0.6);
+  border-radius: var(--radius-pill);
+}
+
+.student-body {
+  padding: 18px 20px 22px;
+}
+
+.student-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.student-top h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.badge {
+  padding: 0 12px;
+  font-size: 0.78rem;
+  background: var(--color-text);
+  color: var(--color-muted);
+  border-radius: var(--radius-pill);
+}
+
+.student-result {
+  margin: 6px 0 14px;
+  font-size: 0.92rem;
+  color: var(--color-soft);
+}
+
+.progress {
+  height: 8px;
+  overflow: hidden;
+  background: var(--color-dark);
+  border-radius: var(--radius-pill);
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: var(--color-text);
+  border-radius: inherit;
+}
+
+.progress-meta {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--color-soft);
+}
+
+.students-note {
+  margin-top: 32px;
+  font-size: 0.8rem;
+  color: var(--color-soft);
+}
+
+.students-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: var(--section-padding-y) var(--content-pad-x);
+  text-align: center;
+  background: var(--color-dark);
+}
